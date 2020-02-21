@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     position: relative;
+    background-color: #F2F2F2;
     /* выше установили ограничения для секции */
 }
 
@@ -66,6 +67,7 @@ footer {
 
 section {
     border:  1px solid red;
+    position: relative;
 }
 
 .logo {
@@ -107,4 +109,151 @@ section {
 
 .header_link {
     text-decoration: none;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+.two-columns {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%;
+    justify-content: space-between;
+    min-height: 300px; /*Очень мутное решение расстояние между параграфами в 30px, узнать как правильно.*/
+}
+
+.two-columns_main-text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-width: 784px;
+    justify-content: space-between;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.two-columns_brief {
+    width: 175px;
+    color: #2F80ED;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.span-accent {
+    font-weight: bold;
+} /*Почему-то в локальной версии не выделяет жирным (34 строка html), в pen.io и локальным куском кода и целиком - выделяет как и должен*/
+
+.section-title {
+    display: flex;
+    margin: auto;
+    border: 1px solid red;
+
+}
+
+.digits {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__title_digits {
+    width: 60%;
+    justify-content: center;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.section__subtitle_digits {
+    width: 60%;
+    justify-content: center;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1100px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-bottom: 100px;
+    margin-right: auto;
+}
+
+.table_cell {
+    width: 250px;
+    margin-top: 60px;
+}
+
+.table_heading {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.table_text {
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.cell_subtitle {
+    margin-top: 20px;
+}
+
+.feinman {
+    display: flex;
+    flex-direction: column;
+    height: 790px;
+    background-color: #F2F2F2;
+    background-image: url(../images/feinman.png);
+    background-size: 867px 637px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    bottom: 0;
+    left: 0;
+}
+
+.section__title_feinman {
+    width: 648px;
+    justify-content: center;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.section__subtitle_feinman {
+    justify-content: center;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 70px;
+}
+
+.feinman_link {
+font-style: normal;
+text-decoration: none;
+color: black;
+}
+
+.section__subtitle_feinman_link {
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    right: 48px;
 }
