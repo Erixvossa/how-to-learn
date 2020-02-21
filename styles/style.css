@@ -50,12 +50,13 @@
 }
 
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+/*.table__cell_theme_dark {
     width: 200px;
     color: white;
     margin-right: 0;
     margin-top: 80px;
 }
+*/
 
 div {
     border: 1px solid red;
@@ -152,7 +153,6 @@ section {
     display: flex;
     margin: auto;
     border: 1px solid red;
-
 }
 
 .digits {
@@ -167,15 +167,6 @@ section {
     font-size: 60px;
     font-weight: bold;
     margin-top: 100px;
-}
-
-.section__subtitle_digits {
-    width: 60%;
-    justify-content: center;
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: normal;
-    margin-top: 20px;
 }
 
 .table {
@@ -202,7 +193,7 @@ section {
     margin-top: 0;
 }
 
-.table_text {
+.table__text {
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
@@ -226,17 +217,10 @@ section {
 }
 /*куда в данном случае прописывать alt?*/
 
-.section__title_feinman {
-    width: 648px;
-    justify-content: center;
-    line-height: 1.15;
-    font-size: 120px;
-    font-weight: bold;
-    margin-top: 100px;
-    margin-bottom: 0;
-}
-
-.section__subtitle_feinman {
+.feinman__subtitle {
+    display: flex;
+    margin: auto;
+    border: 1px solid red;
     justify-content: center;
     line-height: 51px;
     font-size: 36px;
@@ -250,7 +234,7 @@ text-decoration: none;
 color: black;
 }
 
-.section__subtitle_feinman_link {
+.feinman__subtitle_link {
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
@@ -259,70 +243,117 @@ color: black;
     right: 48px;
 }
 
-.section__title_caufman {
-    width: 60%;
-    justify-content: center;
-    line-height: 69px;
-    font-size: 60px;
-    font-weight: bold;
-    margin-top: 90px;
-    margin-bottom: 0;
-}
-
-.section__subtitle_caufman {
-    width: 60%;
-    justify-content: center;
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: normal;
-    margin-top: 20px;
-}
-
-.table__cell_dark {
+.table__cell_theme_dark {
     width: 200px;
     margin-top: 80px;
+    color: white;
 }
 
 .table_caufman {
     margin-bottom: 90px;
 }
 
-.section__subtitle_digits {
-    width: 60%;
+.section-subtitle {
+    display: flex;
+    margin: auto;
+    border: 1px solid red;
     justify-content: center;
+    font-weight: normal;
+    width: 60%;
     line-height: 34px;
     font-size: 24px;
-    font-weight: normal;
     margin-top: 20px;
 }
 
-.section__subtitle_caufman {
-    width: 60%;
-    justify-content: center;
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: normal;
-    margin-top: 20px;
+.kaufman {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #000000;
+    z-index: 1;
 }
 
-.section__subtitle_feinman_link {
-    line-height: 51px;
-    font-size: 36px;
-    font-weight: normal;
+/*Не разобрался, почему в тз есть модификаторы ко всем темам дарк,
+ если к закомментированным достаточно .table__cell_theme_dark
+
+.table__text_theme_dark {
+    color: white;
+}
+
+.table__heading_theme_dark {
+    color: white;
+}
+*/
+
+.section-title_theme_dark {
+    margin-top: 90px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.section-title {
+    display: flex;
+    margin: auto;
+    border: 1px solid red;
+    width: 60%;
+    justify-content: center;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.feinman_title {
+    display: flex;
+    margin: auto;
+    border: 1px solid red;
+    width: 648px;
+    justify-content: center;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.section-subtitle_theme_dark {
+color: white;
+}
+
+.kaufman__triangle {
+    background-image: url(../images/triangle.svg);
+    height: 877px;
+    width: 877px;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    top: 50%;
-    right: 48px;
+    right: -210px;
+    z-index: -1;
 }
 
-.section__subtitle_feinman {
-    justify-content: center;
-    line-height: 51px;
-    font-size: 36px;
-    font-weight: normal;
-    margin-top: 70px;
+/*.logo {
+    background-image: url(../images/logo.svg);
+    width: 183px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    z-index: 3;
 }
 
-.section__subtitle {
+.study {
+    margin-left: 64px;
+    width: 730px;
+    align-items: center;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold ;
+    flex-direction: column;
     justify-content: center;
-    font-weight: normal;
+    display: flex;
+    z-index: 3;
 }
+*/
