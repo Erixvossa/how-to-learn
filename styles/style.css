@@ -189,12 +189,12 @@ section {
     margin-right: auto;
 }
 
-.table_cell {
+.table__cell {
     width: 250px;
     margin-top: 60px;
 }
 
-.table_heading {
+.table__heading {
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
@@ -224,6 +224,7 @@ section {
     bottom: 0;
     left: 0;
 }
+/*куда в данном случае прописывать alt?*/
 
 .section__title_feinman {
     width: 648px;
@@ -256,4 +257,72 @@ color: black;
     position: absolute;
     top: 50%;
     right: 48px;
+}
+
+.section__title_caufman {
+    width: 60%;
+    justify-content: center;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+
+.section__subtitle_caufman {
+    width: 60%;
+    justify-content: center;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.table__cell_dark {
+    width: 200px;
+    margin-top: 80px;
+}
+
+.table_caufman {
+    margin-bottom: 90px;
+}
+
+.section__subtitle_digits {
+    width: 60%;
+    justify-content: center;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.section__subtitle_caufman {
+    width: 60%;
+    justify-content: center;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.section__subtitle_feinman_link {
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    right: 48px;
+}
+
+.section__subtitle_feinman {
+    justify-content: center;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 70px;
+}
+
+.section__subtitle {
+    justify-content: center;
+    font-weight: normal;
 }
