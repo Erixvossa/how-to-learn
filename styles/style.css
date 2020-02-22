@@ -18,7 +18,42 @@
     padding: 0;
     position: relative;
     background-color: #F2F2F2;
+    overflow: hidden;
     /* выше установили ограничения для секции */
+}
+
+.logo {
+    background-image: url(../images/logo.svg);
+    width: 183px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 3;
+}
+
+.logo_place_header {
+    top: 30px;
+    left: 64px;
+}
+
+.logo_place_footer {
+    background-image: url(../images/logo_white.svg);
+    left: 0;
+}
+
+.header__title {
+    margin-left: 64px;
+    width: 730px;
+    align-items: center;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold ;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    z-index: 3;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -33,10 +68,9 @@
     top: 64px;
     right: 0;
     flex-direction: row-reverse;
-
 }
 
-.two_again {
+.header__main-illustration {
     height: 608px;
     width: 765px;
     background-image: url(../images/two_again.png);
@@ -49,55 +83,7 @@
     z-index: 2;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-/*.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
-}
-*/
-
-div {
-    border: 1px solid red;
-}
-
-footer {
-    border: 1px solid red;
-}
-
-section {
-    border:  1px solid red;
-    position: relative;
-}
-
-.logo {
-    background-image: url(../images/logo.svg);
-    width: 183px;
-    height: 32px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 30px;
-    left: 64px;
-    z-index: 3;
-}
-
-.study {
-    margin-left: 64px;
-    width: 730px;
-    align-items: center;
-    line-height: 96px;
-    font-size: 102px;
-    font-weight: bold ;
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    z-index: 3;
-}
-
-.header_subtitle {
+.header__subtitle {
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
@@ -108,8 +94,18 @@ section {
     z-index: 3;
 }
 
-.header_link {
+.header__link {
     text-decoration: none;
+}
+
+
+
+
+
+/*пока хз зачем сделал - разобраться в конце БЭМ чистки*/
+.section {
+    border:  1px solid red;
+    position: relative;
 }
 
 .description {
@@ -126,7 +122,15 @@ section {
     min-height: 300px; /*Очень мутное решение расстояние между параграфами в 30px, узнать как правильно.*/
 }
 
-.two-columns_main-text {
+.two-columns__brief {
+    width: 175px;
+    color: #2F80ED;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.two-columns__main-text {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -137,27 +141,24 @@ section {
     font-weight: normal;
 }
 
-.two-columns_brief {
-    width: 175px;
-    color: #2F80ED;
-    line-height: 1.2;
-    font-size: 18px;
-    font-weight: normal;
+.two-columns__paragraph {
+    /*пока неясно, зачем оно мне нужно. Подозреваю, что им можно задать расстояние в 30px, покурить на эту тему. Идея в через модификатор среднему параграфу сделать марджин топ боттом 30px*/
 }
 
-.span-accent {
+.two-columns__span-accent {
     font-weight: bold;
 } /*Почему-то в локальной версии не выделяет жирным (34 строка html), в pen.io и локальным куском кода и целиком - выделяет как и должен*/
+
+
+.digits {
+    display: flex;
+    flex-direction: column;
+}
 
 .section-title {
     display: flex;
     margin: auto;
     border: 1px solid red;
-}
-
-.digits {
-    display: flex;
-    flex-direction: column;
 }
 
 .section__title_digits {
@@ -167,6 +168,18 @@ section {
     font-size: 60px;
     font-weight: bold;
     margin-top: 100px;
+}
+
+.section-subtitle {
+    display: flex;
+    margin: auto;
+    border: 1px solid red;
+    justify-content: center;
+    font-weight: normal;
+    width: 60%;
+    line-height: 34px;
+    font-size: 24px;
+    margin-top: 20px;
 }
 
 .table {
@@ -199,9 +212,40 @@ section {
     font-weight: normal;
 }
 
-.cell_subtitle {
+.table__text_subtitle {
     margin-top: 20px;
 }
+
+
+
+/* и элемента с модификатором вида ключ-значение */
+/*.table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
+}
+*/
+
+div {
+    border: 1px solid red;
+}
+
+footer {
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .feinman {
     display: flex;
@@ -216,6 +260,20 @@ section {
     left: 0;
 }
 /*куда в данном случае прописывать alt?*/
+
+.feinman_title {
+    display: flex;
+    margin: auto;
+    border: 1px solid red;
+    width: 648px;
+    justify-content: center;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
 
 .feinman__subtitle {
     display: flex;
@@ -253,17 +311,7 @@ color: black;
     margin-bottom: 90px;
 }
 
-.section-subtitle {
-    display: flex;
-    margin: auto;
-    border: 1px solid red;
-    justify-content: center;
-    font-weight: normal;
-    width: 60%;
-    line-height: 34px;
-    font-size: 24px;
-    margin-top: 20px;
-}
+
 
 .kaufman {
     display: flex;
@@ -303,18 +351,6 @@ color: black;
     margin-top: 100px;
 }
 
-.feinman_title {
-    display: flex;
-    margin: auto;
-    border: 1px solid red;
-    width: 648px;
-    justify-content: center;
-    line-height: 1.15;
-    font-size: 120px;
-    font-weight: bold;
-    margin-top: 100px;
-    margin-bottom: 0;
-}
 
 .section-subtitle_theme_dark {
 color: white;
@@ -331,29 +367,80 @@ color: white;
     z-index: -1;
 }
 
-/*.logo {
-    background-image: url(../images/logo.svg);
-    width: 183px;
-    height: 32px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 30px;
-    left: 64px;
-    z-index: 3;
+.footer {
+    min-height: 350px;
+    display: flex;
+    background-color: #000000;
+    justify-content: center;
+    color: blanchedalmond;
 }
 
-.study {
-    margin-left: 64px;
-    width: 730px;
-    align-items: center;
-    line-height: 96px;
-    font-size: 102px;
-    font-weight: bold ;
-    flex-direction: column;
-    justify-content: center;
+.footer__columns {
     display: flex;
-    z-index: 3;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    justify-content: space-between;
 }
-*/
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.footer__column_content_copyright {
+    flex-basis: 711px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer__author {
+    margin: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+.footer__column-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.column-links {
+    text-decoration: none;
+    color: blanchedalmond;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer__social-icon {
+    background-size: 16px;
+    background-repeat: no-repeat;
+    z-index: 3;
+    padding-left: 26px;
+    background-position: 0% 43%;
+}
+
+/*применил оч спорное решение по расположению иконок у ссылок. Правильно понимаю, что нужно было добавить картинки в сами ссылки, или нужно было сделать отдельно от ссылок?*/
+
+.footer__social-icon_facebook {
+    background-image: url(../images/facebook_white.svg);
+}
+
+.footer__social-icon_vk {
+    background-image: url(../images/vk_white.svg);
+}
+
+.footer__social-icon_insta {
+    background-image: url(../images/instagram_white.svg);
+}
+
