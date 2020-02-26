@@ -19,7 +19,6 @@
     position: relative;
     background-color: #F2F2F2;
     overflow: hidden;
-    /* выше установили ограничения для секции */
 }
 
 .logo {
@@ -28,7 +27,6 @@
     height: 32px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
     z-index: 3;
 }
@@ -40,8 +38,9 @@
 
 .logo_place_footer {
     background-image: url(../images/logo_white.svg);
-    left: 0;
+    position: relative;
 }
+/*нужно ли сместить влево, чтобы видимая часть лого визуально начиналась по одной вертикали с author?*/
 
 .header__title {
     margin-left: 64px;
@@ -56,7 +55,6 @@
     z-index: 3;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
     height: 568px;
     width: 568px;
@@ -96,13 +94,13 @@
 
 .header__link {
     text-decoration: none;
+    color: #2F80ED;
 }
 
+.header__link:hover {
+    box-shadow: 3px 3px 2px 3px #2F80ED;
+}
 
-
-
-
-/*пока хз зачем сделал - разобраться в конце БЭМ чистки*/
 .section {
     position: relative;
 }
@@ -115,10 +113,8 @@
 .two-columns {
     display: flex;
     margin-top: 100px;
-    margin-bottom: 100px;
     width: 80%;
     justify-content: space-between;
-    min-height: 300px; /*Очень мутное решение расстояние между параграфами в 30px, узнать как правильно. upd: видимо стоит убрать, тк задал расстояние через мод.*/
 }
 
 .two-columns__brief {
@@ -142,19 +138,17 @@
 }
 
 .two-columns__paragraph {
-    /*пока неясно, зачем оно мне нужно. Подозреваю, что им можно задать расстояние в 30px, покурить на эту тему. Идея в через модификатор среднему параграфу сделать марджин топ боттом 30px*/
+    margin-bottom: 30px;
+    margin-top: 0;
 }
 
-.two-columns__paragraph_center {
-    margin-top: 30px;
-    margin-bottom: 30px;
+.two-columns__paragraph:last-of-type {
+    margin-bottom: 0;
 }
-/*расстояние между параграфами задал в 30px через модификатор выше, остается неясным, зачем нужна мин высота блоку в тз и вышестоящий элемент*/
 
 .two-columns__span-accent {
     font-weight: bold;
-} /*Почему-то в локальной версии не выделяет жирным (34 строка html), в pen.io и локальным куском кода и целиком - выделяет как и должен*/
-
+}
 
 .digits {
     display: flex;
@@ -227,15 +221,12 @@ color: white;
 }
 
 .table__text {
+    margin-top: 20px;
+    margin-bottom: 0;
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
 }
-
-.table__text_subtitle {
-    margin-top: 20px;
-}
-
 
 /* и элемента с модификатором вида ключ-значение */
 /*.table__cell_theme_dark {
@@ -245,7 +236,6 @@ color: white;
     margin-top: 80px;
 }
 */
-
 
 .feinman {
     display: flex;
@@ -260,8 +250,6 @@ color: white;
     left: 0;
     position: relative;
 }
-/*Неясно, как привести к визуальному соответствию с брифом, при том что высота блока согласно тз фиксирована*/
-/*куда в данном случае прописывать alt?*/
 
 .feinman__title {
     display: flex;
@@ -276,7 +264,6 @@ color: white;
     text-align: center;
 }
 
-
 .feinman__subtitle {
     display: flex;
     margin: auto;
@@ -287,8 +274,10 @@ color: white;
     margin-top: 70px;
 }
 
-
-.feinman__subtitle_link {
+.feinman__link {
+    font-style: normal;
+    text-decoration: none;
+    color: black;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
@@ -297,10 +286,8 @@ color: white;
     right: 48px;
 }
 
-.feinman_link {
-    font-style: normal;
-    text-decoration: none;
-    color: black;
+.feinman__link:hover {
+    box-shadow: 3px 3px 2px 3px #2F80ED;
 }
 
 .table__cell_theme_dark {
@@ -309,7 +296,7 @@ color: white;
     color: white;
 }
 
-.table_caufman {
+.table_theme_dark {
     margin-bottom: 90px;
 }
 
@@ -317,7 +304,7 @@ color: white;
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    background-color: #000000;
+    background-color: #1F1F1F;
     z-index: 1;
     position: relative;
 }
@@ -329,32 +316,27 @@ color: white;
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
+    top: 0;
     right: -210px;
     z-index: -1;
 }
 
-/*Не разобрался, почему в тз есть модификаторы ко всем темам дарк,
- если к закомментированным достаточно .table__cell_theme_dark
 
 .table__text_theme_dark {
-    color: white;
+
 }
 
 .table__heading_theme_dark {
-    color: white;
+
 }
-*/
-
-
-
-
+/*раскомментировал модификаторы, согласно совету из комментария в html*/
 
 
 
 .footer {
     min-height: 350px;
     display: flex;
-    background-color: #000000;
+    background-color: #1F1F1F;
     justify-content: center;
     color: #F2F2F2;
 }
@@ -377,20 +359,16 @@ color: white;
 
 .footer__column_content_copyright {
     flex-basis: 711px;
-    display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .footer__author {
-    margin: 10px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin: 18px 0;
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
 }
-
 
 .footer__column-heading {
     text-decoration: none;
@@ -398,6 +376,7 @@ color: white;
     line-height: 30px;
     font-size: 18px;
     font-weight: bold;
+    margin: 0;
 }
 
 .footer__column-links {
@@ -405,34 +384,37 @@ color: white;
     flex-direction: column;
     margin-top: 20px;
     margin-bottom: 16px;
+    padding-left: 0;
+    list-style-type: none;
 }
 
-.column-links {
+.footer__column-link {
     text-decoration: none;
     color: #F2F2F2;
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
-}
-
-.footer__social-icon {
     background-size: 16px;
     background-repeat: no-repeat;
     z-index: 3;
-    padding-left: 26px;
     background-position: 0% 43%;
 }
 
-/*применил оч спорное решение по расположению иконок у ссылок. Правильно понимаю, что нужно было добавить картинки в сами ссылки, или нужно было сделать отдельно от ссылок?*/
+.footer__column-link:hover {
+    box-shadow: 3px 3px 2px 3px #2F80ED;
+}
 
 .footer__social-icon_facebook {
     background-image: url(../images/facebook_white.svg);
+    padding-left: 26px;
 }
 
 .footer__social-icon_vk {
     background-image: url(../images/vk_white.svg);
+    padding-left: 26px;
 }
 
 .footer__social-icon_insta {
     background-image: url(../images/instagram_white.svg);
+    padding-left: 26px;
 }
