@@ -27,11 +27,11 @@
     height: 32px;
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
     z-index: 3;
 }
 
 .logo_place_header {
+    position: absolute;
     top: 30px;
     left: 64px;
 }
@@ -39,6 +39,7 @@
 .logo_place_footer {
     background-image: url(../images/logo_white.svg);
     position: relative;
+    height: 35px;
 }
 /*нужно ли сместить влево, чтобы видимая часть лого визуально начиналась по одной вертикали с author?*/
 
@@ -90,6 +91,7 @@
     bottom: 30px;
     width: 388px;
     z-index: 3;
+    margin-bottom: 0
 }
 
 .header__link {
@@ -277,7 +279,7 @@ color: white;
 .feinman__link {
     font-style: normal;
     text-decoration: none;
-    color: black;
+    color: #000000;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
@@ -332,13 +334,12 @@ color: white;
 /*раскомментировал модификаторы, согласно совету из комментария в html*/
 
 
-
 .footer {
     min-height: 350px;
     display: flex;
     background-color: #1F1F1F;
     justify-content: center;
-    color: #F2F2F2;
+    color: white;
 }
 
 .footer__columns {
@@ -372,7 +373,7 @@ color: white;
 
 .footer__column-heading {
     text-decoration: none;
-    color: #F2F2F2;
+    color: white;
     line-height: 30px;
     font-size: 18px;
     font-weight: bold;
@@ -390,7 +391,7 @@ color: white;
 
 .footer__column-link {
     text-decoration: none;
-    color: #F2F2F2;
+    color: white;
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
@@ -404,17 +405,17 @@ color: white;
     box-shadow: 3px 3px 2px 3px #2F80ED;
 }
 
-.footer__social-icon_facebook {
+.footer__column-link_facebook {
     background-image: url(../images/facebook_white.svg);
     padding-left: 26px;
 }
 
-.footer__social-icon_vk {
+.footer__column-link_vk {
     background-image: url(../images/vk_white.svg);
     padding-left: 26px;
 }
 
-.footer__social-icon_insta {
+.footer__column-link_instagram {
     background-image: url(../images/instagram_white.svg);
     padding-left: 26px;
 }
