@@ -1,0 +1,17 @@
+
+
+.footer__column-link {
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    z-index: 3;
+    background-position: 0% 43%;
+}
+
+.footer__column-link:hover {
+    box-shadow: 3px 3px 2px 3px #2F80ED;
+}

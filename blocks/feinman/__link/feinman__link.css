@@ -1,0 +1,15 @@
+.feinman__link {
+    font-style: normal;
+    text-decoration: none;
+    color: #000000;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    right: 48px;
+}
+
+.feinman__link:hover {
+    box-shadow: 3px 3px 2px 3px #2F80ED;
+}

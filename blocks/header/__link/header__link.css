@@ -1,0 +1,8 @@
+.header__link {
+    text-decoration: none;
+    color: #2F80ED;
+}
+
+.header__link:hover {
+    box-shadow: 3px 3px 2px 3px #2F80ED;
+}

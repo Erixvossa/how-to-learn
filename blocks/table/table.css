@@ -1,0 +1,27 @@
+@import url(../table/__cell/table__cell.css);
+@import url(../table/__cell/_theme/table__cell_theme_dark.css);
+@import url(../table/__heading/table__heading.css);
+@import url(../table/__text/table__text.css);
+
+.table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1100px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-bottom: 100px;
+    margin-right: auto;
+}
+
+/*
+.table__text_theme_dark {
+
+}
+
+.table__heading_theme_dark {
+
+}
+*/
+/*раскомментировал модификаторы, согласно совету из комментария в html
+В данный момент сохранил здесь, если в будущем понадобятся.*/
