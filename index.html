@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="page">
-
         <header class="header">
             <div class='logo logo_place_header'></div>
             <h1 class='header__title'>Научиться учиться</h1>
@@ -37,7 +36,6 @@
                     </div>
                 </div>
             </section>
-            
             <section class="technics">
                 <h2 class="section-title">Техники обучения</h2>
                 <p class="section-subtitle">Пять практик от Барбары Оакли</p>
@@ -69,7 +67,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="video">
                 <h2 class="section-title">Видео на TED</h2>
                 <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
@@ -86,7 +83,6 @@ src="https://www.youtube.com/embed/arj7oStGLkU"
                     </div>
                 </div>
             </section>
-
             <section class='oakley'>
                 <div class='two-columns'>
                     <h2 class='two-columns__brief'>
@@ -98,21 +94,12 @@ src="https://www.youtube.com/embed/arj7oStGLkU"
                         </p>
                     </div>
                 </div>
-
-
             </section>
-
-
-
             <section class="feinman">
                 <h2 class='feinman__title'>Метод Фейнмана</h2>
                 <p class="feinman__subtitle">Выучить и не забыть</p>
                 <a class=feinman__link href='#'>Подробнее &rarr;</a>
             </section>
-            
-
-
-
             <section class="digits">
                 <h2 class='section-title'>Цифры и факты</h2>
                 <p class=" section-subtitle">Про учёбу и мозг</p>
@@ -160,7 +147,6 @@ src="https://www.youtube.com/embed/arj7oStGLkU"
                     </div>
                 </div>
             </section>
-
             <section class='khan'>
                 <div class="khan__container">
                     <p class='khan__author'>Салман Хан</p>
@@ -169,14 +155,11 @@ src="https://www.youtube.com/embed/arj7oStGLkU"
                     <p class="khan__quote-author">Джордж Лукас</p>
                     <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
                     <div class="khan__book-container">
-                    <img class="khan__book-pic" src='./sprint-2-sources/images_sprint-2/book.jpg' alt='Обложка книги Салман Хан "Весь мир - школа"'>
-                    <a class="khan__buy-link" href="#">Купить книгу &rarr;</a>
+                        <img class="khan__book-pic" src='./sprint-2-sources/images_sprint-2/book.jpg' alt='Обложка книги Салман Хан "Весь мир - школа"'>
+                        <a class="khan__buy-link" href="#">Купить книгу &rarr;</a>
                     </div>
-                    
                 </div>
             </section>
-
-            
             <section class="kaufman">
                 <div class="kaufman__triangle"></div>
                 <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
@@ -235,20 +218,16 @@ src="https://www.youtube.com/embed/arj7oStGLkU"
                 </div>
             </section>
         </main>
-
-
             <section class='resources'>
                 <h2 class="section-title">Полезные ресурсы</h2>
                 <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
                     <ul class="resources__logo-zone">
-                        <a class="resources__logo resources__logo_arzamas" href='#'></a>
-                        <a class="resources__logo resources__logo_n1" href='#'></a>
-                        <a class="resources__logo resources__logo_strelka" href='#'></a>
-                        <a class="resources__logo resources__logo_polka" href='#'></a>
+                        <a class="resources__logo resources__logo_img_arzamas" href='#'></a>
+                        <a class="resources__logo resources__logo_img_n1" href='#'></a>
+                        <a class="resources__logo resources__logo_img_strelka" href='#'></a>
+                        <a class="resources__logo resources__logo_img_polka" href='#'></a>
                     </ul>
             </section>
-
-
         <footer class="footer">
             <div class='footer__columns'>
                 <div class="footer__column footer__column_content_copyright">
@@ -277,54 +256,11 @@ src="https://www.youtube.com/embed/arj7oStGLkU"
 </body>
 </html>
 
-<!--Резюме по работе:
-
-    Отлично, осталось немного)
-    Пишите, пожалуйста, итоговые комментарии внизу html-файла, в css их легче потерять:)
-
-    
-    Что надо исправить помимо замечаний в коде:
-
-        + Все текстовые элементы должны быть размечены h1-h6/p, а не div.
-                Исправил
-        + у kaufman__triangle координата top должна быть 0
-                Исправил
-        + ```footer__author``` нужно спозиционировать без использования абсолюта
-                Спасибо, забыл убрать ненужные уже части.
-        - ```logo_place_footer``` нужно спозиционировать без использования абсолюта
-                Не нашел, почему комментарий про абсолют? Исправил при отправке на 2 ревью же. Остался от 1 ревью комментарий?
-
-    Можно лучше:
-
-        + Очень хорошей практикой было бы добавить всем интерактивным элементам(тем, с которыми может взаимодействовать пользователь, например - ссылки)
-        эффект при наведении с помощью :hover.
-        Подробнее про состояние наведения можно почитать тут https://developer.mozilla.org/ru/docs/Web/CSS/:hover
-                Спасибо, сделал.
-
-
-    Комментарии "можно лучше" носят рекомендательный характер, их выполнение остается на Ваше усмотрение.
-    Комментарии "надо исправить" являются обязательными, только при выполнении всех "надо исправить" работа будет зачтена.
-
-
-    Ответы на комментарии:
-        - Исправил марджин боттом согласно комментарию из код-ревью. Решение мне не нравится тем, что визуально отодвигает следующую секцию из-за марджин во всех параграфов. Я бы все равно оставил через модификатор, как было у меня изначально
-
-            >> Тут есть более изящный вариант:) Воспользуйтесь псевдоселектором :last-child (Пример использования тут https://webref.ru/css/last-child)
-            С помощью него можно обнулить отступ у последнего параграфа и двигаться ничего не будет)
-                    Спасибо. Уже после отправки на ревью 2 разобрался, как сделать;) Сделал через ласт оф тайп.
-
-        - нужно ли сместить влево, чтобы видимая часть лого визуально начиналась по одной вертикали с author
-
-            >> Можно, воспользуйтесь background-position: left;
-                    Спасибо за совет. Исправил, убрав ненужное центрирование в родителе.
-
-
-        - Не разобрался, почему в тз есть модификаторы ко всем темам дарк, если к закомментированным достаточно .table__cell_theme_dark
-
-            >> лучше расскоментировать селекторы ниже, если в таблице цвет текста будет не один, начнется путаница, это надо учитывать
-                    Сделано.
-        - все еще открытый вопрос по нахлесту секций дескрипшн и диджитс. Нужно ли так сделать и если да, то как?
-
-            >> проще всего убрать отступ снизу у two-columns)
-                    Значит я неправильно понял задачу. Как это сделать визуально - очевидно. Таки сделал. Спасибо!
+<!--Вопросы по работе:
+    Нужно ли создавать промежуточный файл для каскадности импорта (section__title)?
+    Модификатор блока выносить в index.css? (в данный момент сделано так)
+    Нужно ли переделывать ссылки в .resources__logo в изображения, а не фон?
+    Не смог разобраться, как сделать, чтобы kaufman__triangle при вращении перекрывал секцию следующюю за ним. Нужно ли это? И как это можно сделать?
+    Лишние неиспользуемые файлы и папки не стал удалять (пример style.css) Нужно ли убрать из папок проекта?
+    Opacity ссылкам сделал внутри каждой CSS кода каждой ссылки. Нужно ли было сделать через общий для всех ссылок на странице класс? (вообще хотелось, но смутил момент про независимость каждого блока в БЭМ из теории в тренажере)
 -->

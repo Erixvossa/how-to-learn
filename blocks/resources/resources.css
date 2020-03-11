@@ -1,38 +1,21 @@
+@import url(./__logo/resources__logo.css);
+@import url(./__logo-zone/resources__logo-zone.css);
+@import url(./__logo/_img/resources__logo_img_arzamas.css);
+@import url(./__logo/_img/resources__logo_img_n1.css);
+@import url(./__logo/_img/resources__logo_img_polka.css);
+@import url(./__logo/_img/resources__logo_img_strelka.css);
+
 .resources {
     display: flex;
     flex-direction: column;
 }
 
-.resources__logo-zone {
-    display: flex;
-    flex-direction: row;
-    width: 1100px;
-    margin: 80px auto 217px;
-    list-style-type: none;
-}
 
-.resources__logo {
-    display: flex;
-    width: 270px;
-    height: 38px;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-}
 
-.resources__logo_arzamas {
-    background-image: url(../../sprint-2-sources/images_sprint-2/logo/arzamas.svg);
-}
 
-.resources__logo_n1 {
-    background-image: url(../../sprint-2-sources/images_sprint-2/logo/n1.svg);
-}
 
-.resources__logo_strelka {
-    background-image: url(../../sprint-2-sources/images_sprint-2/logo/strelka.svg);
-}
 
-.resources__logo_polka {
-    background-image: url(../../sprint-2-sources/images_sprint-2/logo/polka.svg);
-}
+
+
+
 

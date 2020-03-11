@@ -8,8 +8,10 @@
     position: absolute;
     top: 50%;
     right: 48px;
+    opacity: 1;
 }
 
 .feinman__link:hover {
-    box-shadow: 3px 3px 2px 3px #2F80ED;
+    opacity: 0.5;
+    transition:  opacity 0.5s ease-in-out;
 }
