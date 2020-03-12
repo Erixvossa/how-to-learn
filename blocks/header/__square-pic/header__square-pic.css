@@ -1,11 +1,4 @@
-@keyframes square_rotation {
-    0% {
-        transform: rotate(-15deg);
-    }
-    100% {
-        transform: rotate(345deg);
-    }
-}
+@import url(../../rotation/rotation.css);
 
 .header__square-pic {
     height: 568px;

@@ -8,6 +8,7 @@
 @import url(../footer/__column-link/_facebook/footer__column-link_facebook.css);
 @import url(../footer/__column-link/_instagram/footer__column-link_instagram.css);
 @import url(../footer/__column-link/_vk/footer__column-link_vk.css);
+@import url(../footer/__column-link-padding/footer__column-link-padding.css);
 
 .footer {
     min-height: 350px;

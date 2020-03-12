@@ -1,9 +1,5 @@
 @import url(./__logo/resources__logo.css);
 @import url(./__logo-zone/resources__logo-zone.css);
-@import url(./__logo/_img/resources__logo_img_arzamas.css);
-@import url(./__logo/_img/resources__logo_img_n1.css);
-@import url(./__logo/_img/resources__logo_img_polka.css);
-@import url(./__logo/_img/resources__logo_img_strelka.css);
 
 .resources {
     display: flex;
